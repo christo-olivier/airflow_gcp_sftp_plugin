@@ -58,7 +58,7 @@ class SFTPToGCSOperator(BaseOperator):
         )
         self.gcs_conn_id = gcs_conn_id
         self.delegate_to = delegate_to
-        self.reload_all = (reload_all,)
+        self.reload_all = reload_all
 
     def execute(self, context):
         gcs_hook = GoogleCloudStorageHook(
