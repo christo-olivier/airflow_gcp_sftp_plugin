@@ -20,13 +20,17 @@ the `$AIRFLOW_HOME/plugins` folder. If the `$AIRFLOW_HOME/plugins` folder does n
 
 Once you have completed your Airflow plugins folder should look like this
 
-`$AIRFLOW_HOME/plugins/gcp_sftp_plugin`  
-`$AIRFLOW_HOME/plugins/gcp_sftp_plugin/__init__.py`     
-`$AIRFLOW_HOME/plugins/gcp_sftp_plugin/operators/__init__.py`  
-`$AIRFLOW_HOME/plugins/gcp_sftp_plugin/operators/gcs_to_sftp_operator.py`   
-`$AIRFLOW_HOME/plugins/gcp_sftp_plugin/operators/sftp_delete_file_operator.py`   
-`$AIRFLOW_HOME/plugins/gcp_sftp_plugin/operators/sftp_to_gcs_operator.py`   
+```
+$AIRFLOW_HOME/plugins/gcp_sftp_plugin
+$AIRFLOW_HOME/plugins/gcp_sftp_plugin/__init__.py     
+$AIRFLOW_HOME/plugins/gcp_sftp_plugin/operators/__init__.py
+$AIRFLOW_HOME/plugins/gcp_sftp_plugin/operators/gcs_to_sftp_operator.py
+$AIRFLOW_HOME/plugins/gcp_sftp_plugin/operators/sftp_delete_file_operator.py   
+$AIRFLOW_HOME/plugins/gcp_sftp_plugin/operators/sftp_to_gcs_operator.py
+```
 
 In order to use the hook and operator use the following imports:
 
-`from airflow.operators.gcp_sftp_plugin import GCSToSFTPOperator, SFTPToGCSOperator, SFTPDeleteFileOperator`
+```Python
+from airflow.operators.gcp_sftp_plugin import GCSToSFTPOperator, SFTPToGCSOperator, SFTPDeleteFileOperator
+```
